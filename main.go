@@ -29,6 +29,12 @@ func main() {
 	// course := "Docker Deep Dive"
 	module := 3.2
 
+	// creating a pointer value
+	ptr := &module
+
 	fmt.Println("Name is set to", name, "and is of type ", reflect.TypeOf(name))
 	fmt.Println("Name is set to", module, "and is of type ", reflect.TypeOf(module))
+
+	// showing a pointer value
+	fmt.Println("The memory adress of the *module* is", ptr, "and the value of the memory is", *ptr)
 }
