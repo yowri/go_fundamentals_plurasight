@@ -1,13 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 var (
-	name, course string
-	module       float64
+	// declaring types u can do like this
+
+	// name, course string
+	// module       float64
+
+	// or like this
+
+	// name, course, module = "nigel", "Docker Deep Dive", 3.2
+
+	// but this is more readable
+	name   = "nigel"
+	course = "Docker Deep Dive"
+	module = 3.2
 )
 
 func main() {
-	fmt.Println("Name is set to", name)
-	fmt.Println("Name is set to", module)
+	fmt.Println("Name is set to", name, "and is of type ", reflect.TypeOf(name))
+	fmt.Println("Name is set to", module, "and is of type ", reflect.TypeOf(module))
 }
