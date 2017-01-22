@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // // Package level variables are global
 // var (
@@ -22,7 +25,7 @@ import "fmt"
 func main() {
 	// // This declaring only works in function.
 	// // Variables at the function level must be used.
-	name := "nigel"
+	name := os.Getenv("USERNAME")
 	course := "Docker Deep Dive"
 	// module := 3.2
 
